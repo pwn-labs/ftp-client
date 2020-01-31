@@ -2,7 +2,7 @@
   "name": "pwnlabs/ftp-client",
   "description": "A simple wrapper client lbrary to connect to FTP Servers, and do simple operations.",
   "minimum-stability": "stable",
-  "license": "proprietary",
+  "license": "MIT",
   "authors": [
     {
       "name": "Shrey Puranik",
