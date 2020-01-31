@@ -7,9 +7,9 @@
     {
       "name": "Shrey Puranik",
       "email": "shrey.puranik@powwownow.com"
-    },
-  ]
-  "require": {
+    }
+  ],
+"require": {
     "php": ">=7.0"
   }
 
