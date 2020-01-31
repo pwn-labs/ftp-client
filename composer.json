@@ -1,0 +1,12 @@
+{
+  "name": "pwnlabs/ftp-client",
+  "description": "A simple wrapper client lbrary to connect to FTP Servers, and do simple operations.",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Shrey Puranik",
+      "email": "shrey.puranik@powwownow.com"
+    }
+  ]
+}
