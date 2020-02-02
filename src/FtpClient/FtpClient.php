@@ -95,6 +95,7 @@ class FtpClient
     /**
      * @param string $localFilename
      * @param string $remoteFilename
+     * @return $this
      */
     public function downloadRemoteFileToLocalStorage(
         string $localFilename,
@@ -103,6 +104,20 @@ class FtpClient
         $localFileHandle = fopen($localFilename, 'w');
 
         ftp_fget($this->connectionId, $localFileHandle, $remoteFilename, FTP_ASCII, 0);
+
+        return $this;
+    }
+
+    /**
+     * @param $remoteFilename
+     * @param $localFilePath
+     * @return $this
+     */
+    public function putLocalFileOnRemoteStorage(string $remoteFilename, string $localFilePath)
+    {
+        ftp_put($this->connectionId, $remoteFilename, $localFilePath, FTP_ASCII);
+
+        return $this;
     }
 
     /**
